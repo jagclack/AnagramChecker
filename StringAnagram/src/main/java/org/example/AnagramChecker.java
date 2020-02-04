@@ -7,8 +7,8 @@ public class AnagramChecker {
         if (firstWord.length() != secondWord.length()) {
             return false;
         } else {
-            char[] firstWordArr = firstWord.toCharArray();
-            char[] secondWordArr = secondWord.toCharArray();
+            char[] firstWordArr = firstWord.toLowerCase().toCharArray();
+            char[] secondWordArr = secondWord.toLowerCase().toCharArray();
             Arrays.sort(firstWordArr);
             Arrays.sort(secondWordArr);
 
